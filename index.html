@@ -32,27 +32,26 @@
           background-color: #F8F3EA; 
       }
       
-       h1 {
+      h1, h2, h3, h4 {
         font-family: "Abril Fatface", serif;
+        text-align: center;
+        letter-spacing: 2px;
+      }
+      
+       h1 {
         font-size: 120px;
       }
       
        h2 {
-        font-family: "Abril Fatface", serif;
         font-size: 70px;
-        text-align: center;
       }
       
        h3 {
-        font-family: "Abril Fatface", serif;
         font-size: 40px;
-        text-align: center;
       }
       
        h4 {
-        font-family: "Abril Fatface", serif;
         font-size: 30px;
-        text-align: center;
       }
       
       p {
@@ -76,30 +75,37 @@
         width: 40%;
         padding: 0px 50px; 
       }
-
-      #Left p {
-        font-family: "Quicksand", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: <weight>;
-          font-style: normal;
-          text-align: justify;
-          text-justify: inter-word;
-      }
       
       #right {
         display: inline;
         float: right;
         clear: none;
         width: 45%;
+        padding-right: 50px;
+        padding-bottom: 50px;
       }
       
-      #right p {
-        font-family: "Quicksand", sans-serif;
-          font-optical-sizing: auto;
-          font-weight: <weight>;
-          font-style: normal;
-          text-align: justify;
-          text-justify: inter-word;
+      
+      #nav {
+        font-size: 2em;
+        font-weight: 700;
+      }
+      
+      #nav ul{
+         margin: 0;
+        padding: 0;
+      }
+      
+      #nav li{
+        list-style: none;
+        display: inline; 
+      }
+      
+      #nav a{
+      text-decoration: none; 
+      margin-right: 1.5em;
+      padding: 5px 10px;
+      color: #5F090A;
       }
     
     </style>
@@ -110,6 +116,14 @@
     
     <div class="header">
   <h1>Stiches</h1>
+      <div id="nav">
+          <ul>
+            <li><a href="/">Spring and Summer Trends</a></li>
+            <li><a href="/">Fashion News</a></li>
+            <li><a href="/">Contact Us</a></li>
+            <li><a href="/">About Us</a></li>
+          </ul>
+        </div>
     </div>
     
     <h2> Contact Us </h2>
@@ -127,7 +141,5 @@
     <div id="right">
     <img src="ContactUs_Image.jpg" alt="Olivia Rodrigo standing in a long pink crocheted coat, holding and talking on an late 90's, early 2000's style phone" width="800px">
     </div>
-    
   </body>
-  
 </html>
