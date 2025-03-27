@@ -16,8 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet"> 
    
-    <style>
-      
+    <style> 
        .header { 
         font-family: "Abril Fatface", serif;
         color: #5F090A;
@@ -28,11 +27,15 @@
         background-color: #F8F3EA; 
        }
       
+      #content {
+        width: 100%;      
+      }
+      
        body {
           background-color: #F8F3EA; 
       }
       
-      h1, h2, h3, h4 {
+       h1, h2, h3, h4 {
         font-family: "Abril Fatface", serif;
         text-align: center;
         letter-spacing: 2px;
@@ -54,7 +57,7 @@
         font-size: 30px;
       }
       
-      p {
+       p {
          font-family: "Quicksand", sans-serif;
           font-optical-sizing: auto;
           font-weight: <weight>;
@@ -68,23 +71,21 @@
          max-width: 100%;
       } 
       
-       #Left {
-        display: inline;
-        float: left;
-        clear: none;
+       .left {
         width: 40%;
-        padding: 0px 50px; 
-      }
-      
-      #right {
+        float: left;
         display: inline;
-        float: right;
         clear: none;
-        width: 45%;
-        padding-right: 50px;
-        padding-bottom: 50px;
+        padding: 0% 5%;
       }
       
+      .right {
+        width: 40%;
+        float: right;
+        display: inline;
+        clear: none;
+        padding: 5%;
+      }
       
       #nav {
         font-size: 2em;
@@ -113,7 +114,7 @@
   </head> 
   
   <body>
-    
+    <!-- Header + Menue Items -->
     <div class="header">
   <h1>Stiches</h1>
       <div id="nav">
@@ -126,9 +127,10 @@
         </div>
     </div>
     
+     <div id="content">
     <h2> Contact Us </h2>
     
-    <div id="Left">
+    <div class="left">
     <h3> We Would Love To Hear From You! </h3>
     
     <p>Here at Stitches we want to ensure that our content is aligning with our audience.  Our site would not be possible without the input of our readers. If you have any questions, suggestions, or ideas please reach out to us at the contact information below and we will be sure to get back to you In a timely manner.
@@ -138,8 +140,10 @@
     <h4>Phone: 111 - 222 - 3333</h4>  
     </div>
     
-    <div id="right">
+    <div class="right">
     <img src="ContactUs_Image.jpg" alt="Olivia Rodrigo standing in a long pink crocheted coat, holding and talking on an late 90's, early 2000's style phone" width="800px">
+      
+       </div>
     </div>
   </body>
 </html>
